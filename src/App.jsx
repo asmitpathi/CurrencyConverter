@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import {InputBox} from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
+import bgImage from "./assets/background.webp"
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
-            backgroundImage: `url('/background.webp')`,
+            backgroundImage: `url(${bgImage})`,
         }}
     >
         <div className="w-full">
